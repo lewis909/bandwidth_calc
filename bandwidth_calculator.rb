@@ -77,9 +77,9 @@ loop do
 
 	#This section takes the output of X and converts it into DD:HH:MM:SS
 	t = x
-	mm, ss = t.divmod(60)            #=> [4515, 21]
-	hh, mm = mm.divmod(60)           #=> [75, 15]
-	dd, hh = hh.divmod(24)           #=> [3, 3]
+	mm, ss = t.divmod(60)            
+	hh, mm = mm.divmod(60)           
+	dd, hh = hh.divmod(24)           
 	puts
 	puts "---------------------------------------------------"
 	puts "The transfer will take:\n \n  %d days, %d hours, %d minutes and %d seconds \n \n to complete running at #{transfer_rate} Mbps." % [dd, hh, mm, ss]
